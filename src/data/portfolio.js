@@ -11,7 +11,7 @@ export const personalInfo = {
   tagline:
     "Shipping production-grade React Native apps across Android, iOS, Tablet, Android TV, and Apple TV",
   resumeUrl:
-    "https://drive.google.com/file/d/1XtcoggQcVtWFTkrNxeiV08hirI1U4Ybt/view",
+    "https://drive.google.com/file/d/1zwPiAQ9OADvgUA7MPRUModxqIL_4Sxir/view",
 };
 
 // ─────────────────────────────────────────────────────────
