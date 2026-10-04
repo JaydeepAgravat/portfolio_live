@@ -2,58 +2,50 @@ import { experience, education } from "../data/portfolio";
 
 export default function Experience() {
   return (
-    <section className="c-section" id="experience">
-      <h2 className="c-heading">Work Experience</h2>
-      <div className="exp-list">
-        {experience.map((e, i) => (
-          <div className="exp-entry" key={i}>
-            <div className="exp-dates">{e.period}</div>
+    <section className="section wrap" id="experience">
+      <header className="section-head">
+        <p className="eyebrow">Experience</p>
+        <h2>2 years of React Native, 17 apps live</h2>
+      </header>
+
+      <div className="timeline">
+        {experience.map((job) => (
+          <article className="job" key={job.company}>
+            <div className="job-meta">
+              <div>{job.period}</div>
+              <div>{job.place}</div>
+            </div>
             <div>
-
-              <a href={e.companyUrl} target="_blank" rel="noopener noreferrer" className="exp-company-row">
-                <span className="exp-company-name">{e.company}</span>
-                <span className="exp-company-arrow">↗</span>
-              </a>
-
-              <div className="exp-role-title">{e.role}</div>
-              <p className="exp-desc-text">{e.description}</p>
-              <ul className="exp-bullets">
-                {e.responsibilities.map((b, j) => (
-                  <li key={j}>{b}</li>
+              <h3>
+                {job.role} · {job.company}
+              </h3>
+              <p className="job-summary">{job.summary}</p>
+              <ul>
+                {job.points.map((point) => (
+                  <li key={point}>{point}</li>
                 ))}
               </ul>
-              <div className="tags-row">
-                {e.tags.map((t, j) => (
-                  <span className="tag" key={j}>
-                    {t}
-                  </span>
-                ))}
-              </div>
+              {job.anchor && (
+                <a className="text-link" href={`#${job.anchor}`}>
+                  Read the case study ↑
+                </a>
+              )}
             </div>
-          </div>
+          </article>
         ))}
-      </div>
 
-      <div style={{ marginTop: 48 }}>
-        <h2 className="c-heading">Education</h2>
-        <div className="exp-list">
-          {education.map((ed, i) => (
-            <div className="edu-entry" key={i}>
-              <div className="exp-dates">{ed.period}</div>
-              <div>
-                <div
-                  className="exp-role-title"
-                  style={{ fontSize: 15, marginBottom: 5 }}
-                >
-                  {ed.degree}
-                </div>
-                <div className="exp-company-name" style={{ fontSize: 13 }}>
-                  {ed.institution}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <article className="job">
+          <div className="job-meta">
+            <div>{education.period}</div>
+            <div>Education</div>
+          </div>
+          <div>
+            <h3>{education.degree}</h3>
+            <p className="job-summary">
+              {education.school} · {education.detail}
+            </p>
+          </div>
+        </article>
       </div>
     </section>
   );
