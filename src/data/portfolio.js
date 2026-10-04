@@ -46,7 +46,7 @@ export const diarchgo = {
   period: "Jun 2026 – Present",
   place: "Remote",
   intro:
-    "DiarchGo is a live quick-commerce delivery service with 50K+ downloads. I own both of its mobile apps, customer and rider, on Android and iOS.",
+    "DiarchGo is a live quick-commerce delivery service with 50K+ downloads, fulfilling orders every day from its own network of dark stores. I own both of its mobile apps, customer and rider, on Android and iOS.",
   apps: [
     {
       name: "DiarchGo customer app",
@@ -150,7 +150,7 @@ export const experience = [
     period: "Jun 2026 – Present",
     place: "Remote",
     summary:
-      "DiarchGo, a live quick-commerce delivery service with 50K+ downloads.",
+      "DiarchGo, a live quick-commerce delivery service with 50K+ downloads, fulfilling orders every day from its own network of dark stores.",
     points: [
       "Own the customer and rider apps on Android and iOS as the only mobile engineer: 11 store releases in four months, 99.87% crash-free users.",
       "Rebuilt the customer app from scratch and launched it: React Native 0.86 (New Architecture, Hermes), strict TypeScript, TanStack Query and Zustand.",
