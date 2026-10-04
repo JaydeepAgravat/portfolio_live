@@ -12,7 +12,7 @@ export const profile = {
   title: "React Native Engineer",
   headline: "React Native Engineer. Quick commerce: customer and rider apps.",
   pitch:
-    "The only mobile engineer on a live quick-commerce app with 18K monthly users. I rebuilt and launched its customer app, maintain its rider app, and own every release on Android and iOS.",
+    "The only mobile engineer on a live quick-commerce app with 50K+ downloads. I rebuilt and launched its customer app, maintain its rider app, and own every release on Android and iOS.",
   location: "Gujarat, India",
   availability: "Open to remote or relocation",
   photo: "/images/profile.jpg",
@@ -34,7 +34,7 @@ export const navItems = [
 ];
 
 export const stats = [
-  { value: "18K", label: "monthly users on the app I own" },
+  { value: "50K+", label: "downloads on the app I own" },
   { value: "11", label: "store releases in four months" },
   { value: "99.87%", label: "crash-free users" },
   { value: "17", label: "apps live on the Play Store and App Store" },
@@ -46,13 +46,7 @@ export const diarchgo = {
   period: "Jun 2026 – Present",
   place: "Remote",
   intro:
-    "DiarchGo is a quick-commerce delivery service running from 8 dark stores. I own both of its mobile apps, customer and rider, on Android and iOS.",
-  scale: [
-    { value: "50K+", label: "downloads" },
-    { value: "18K", label: "monthly users" },
-    { value: "4K", label: "daily users" },
-    { value: "~200", label: "orders a day" },
-  ],
+    "DiarchGo is a live quick-commerce delivery service with 50K+ downloads. I own both of its mobile apps, customer and rider, on Android and iOS.",
   apps: [
     {
       name: "DiarchGo customer app",
@@ -156,7 +150,7 @@ export const experience = [
     period: "Jun 2026 – Present",
     place: "Remote",
     summary:
-      "DiarchGo, a quick-commerce delivery service: 50K+ downloads, 18K monthly users, ~200 orders a day.",
+      "DiarchGo, a live quick-commerce delivery service with 50K+ downloads.",
     points: [
       "Own the customer and rider apps on Android and iOS as the only mobile engineer: 11 store releases in four months, 99.87% crash-free users.",
       "Rebuilt the customer app from scratch and launched it: React Native 0.86 (New Architecture, Hermes), strict TypeScript, TanStack Query and Zustand.",

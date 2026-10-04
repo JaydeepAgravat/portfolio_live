@@ -31,15 +31,6 @@ export default function CaseStudy({ openGallery }) {
         <p className="lede">{diarchgo.intro}</p>
       </header>
 
-      <dl className="scale">
-        {diarchgo.scale.map(({ value, label }) => (
-          <div key={label}>
-            <dt>{value}</dt>
-            <dd>{label}</dd>
-          </div>
-        ))}
-      </dl>
-
       <div className="apps">
         {diarchgo.apps.map((app) => (
           <article className="app" key={app.name}>

@@ -349,8 +349,7 @@ h4 {
   border: 1px solid var(--line);
 }
 
-.stats,
-.scale {
+.stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--line);
@@ -361,27 +360,23 @@ h4 {
   margin-top: clamp(40px, 7vw, 80px);
 }
 
-.stats > div,
-.scale > div {
+.stats > div {
   padding: 24px 20px 24px 0;
 }
 
-.stats > div + div,
-.scale > div + div {
+.stats > div + div {
   padding-left: 20px;
   border-left: 1px solid var(--line);
 }
 
-.stats dt,
-.scale dt {
+.stats dt {
   font-family: var(--serif);
   font-size: clamp(2.1rem, 4.4vw, 3.2rem);
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 
-.stats dd,
-.scale dd {
+.stats dd {
   margin-top: 8px;
   font-size: 0.86rem;
   color: var(--muted);
@@ -407,15 +402,10 @@ h4 {
 }
 
 /* ── Case study ─────────────────────────────────────────── */
-.scale dt {
-  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
-}
-
 .apps {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
-  margin-top: 32px;
 }
 
 .app {
@@ -865,19 +855,16 @@ button.cover:hover img {
     display: none;
   }
 
-  .stats,
-  .scale {
+  .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .stats > div:nth-child(odd),
-  .scale > div:nth-child(odd) {
+  .stats > div:nth-child(odd) {
     padding-left: 0;
     border-left: 0;
   }
 
-  .stats > div:nth-child(n + 3),
-  .scale > div:nth-child(n + 3) {
+  .stats > div:nth-child(n + 3) {
     border-top: 1px solid var(--line);
   }
 
