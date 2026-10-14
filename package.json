@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.js",
+    "dev": "node scripts/build-research.js && vite",
+    "build": "node scripts/build-research.js && vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -22,6 +22,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "marked": "^18.1.1",
     "vite": "^8.0.0"
   }
 }

@@ -762,6 +762,20 @@ button.cover:hover img {
   border-color: var(--text);
 }
 
+.research-link {
+  display: inline-flex;
+  margin-top: 28px;
+  color: var(--muted);
+  opacity: 0.6;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.research-link:hover,
+.research-link:focus-visible {
+  color: var(--accent);
+  opacity: 1;
+}
+
 /* ── Lightbox ───────────────────────────────────────────── */
 .lightbox {
   position: fixed;

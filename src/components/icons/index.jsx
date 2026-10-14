@@ -128,3 +128,20 @@ export const MoonIcon = ({ s = 18 }) => (
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
   </svg>
 );
+
+export const ReactNativeIcon = ({ s = 22 }) => (
+  <svg
+    width={s}
+    height={s}
+    viewBox="-12 -11 24 22"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1"
+    aria-hidden="true"
+  >
+    <circle r="2" fill="currentColor" stroke="none" />
+    <ellipse rx="11" ry="4.2" />
+    <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+    <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+  </svg>
+);

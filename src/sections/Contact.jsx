@@ -1,4 +1,5 @@
 import { profile } from "../data/portfolio";
+import { ReactNativeIcon } from "../components/icons";
 
 export default function Contact() {
   return (
@@ -42,6 +43,14 @@ export default function Contact() {
         <p className="fine">
           {profile.location} · {profile.availability}
         </p>
+        <a
+          className="research-link"
+          href="/research/react-native-2026/"
+          aria-label="React Native interviews in 2026: research notes"
+          title="React Native interviews in 2026: research notes"
+        >
+          <ReactNativeIcon />
+        </a>
       </div>
     </footer>
   );
