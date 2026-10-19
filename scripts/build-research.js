@@ -61,7 +61,7 @@ const page = `<!doctype html>
   <meta name="color-scheme" content="light dark" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Geist:wght@400..600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script>
     (function () {
       var t = null;
@@ -76,8 +76,8 @@ const page = `<!doctype html>
     :root {
       --bg: #faf8f4; --surface: #ffffff; --text: #1b1a17; --muted: #66625a;
       --line: #e4dfd5; --accent: #b4441f; --code: #f1ede5;
-      --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
-      --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --serif: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+      --sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
     }
     :root[data-theme="dark"] {
       --bg: #131210; --surface: #1c1a17; --text: #f0ece4; --muted: #a39d92;
@@ -105,8 +105,8 @@ const page = `<!doctype html>
     .wrap { max-width: 820px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 40px); }
     article { padding-block: 40px 96px; }
     h1, h2, h3, h4 { line-height: 1.25; }
-    h1 { font: 400 clamp(2rem, 6vw, 3.2rem)/1.1 var(--serif); margin: 0 0 24px; }
-    h2 { font: 400 clamp(1.5rem, 4vw, 2rem)/1.2 var(--serif); margin: 64px 0 16px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h1 { font: 800 clamp(2rem, 6vw, 3.2rem)/1.05 var(--serif); letter-spacing: -0.03em; margin: 0 0 24px; }
+    h2 { font: 700 clamp(1.5rem, 4vw, 2rem)/1.15 var(--serif); letter-spacing: -0.02em; margin: 64px 0 16px; padding-top: 24px; border-top: 1px solid var(--line); }
     h3 { font-size: 1.15rem; margin: 40px 0 12px; }
     h4 { font-size: 1rem; margin: 28px 0 8px; }
     h1, h2, h3, h4 { scroll-margin-top: 72px; }

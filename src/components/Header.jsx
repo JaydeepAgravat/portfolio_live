@@ -19,6 +19,9 @@ export default function Header() {
     <header className="site-header">
       <div className="wrap header-inner">
         <a className="brand" href="#top">
+          <span className="brand-mark" aria-hidden="true">
+            JA
+          </span>
           {profile.name}
         </a>
         <nav className="site-nav" aria-label="Sections">

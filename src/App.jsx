@@ -2,7 +2,9 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Lightbox from "./components/Lightbox";
 import Hero from "./sections/Hero";
+import Now from "./sections/Now";
 import CaseStudy from "./sections/CaseStudy";
+import Products from "./sections/Products";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
@@ -20,7 +22,9 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
+        <Now />
         <CaseStudy openGallery={openGallery} />
+        <Products />
         <Experience />
         <Projects openGallery={openGallery} />
         <Skills />

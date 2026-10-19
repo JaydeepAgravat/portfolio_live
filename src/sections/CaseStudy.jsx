@@ -1,7 +1,7 @@
 import { diarchgo } from "../data/portfolio";
 import StoreLinks from "../components/StoreLinks";
 
-function Metric({ from, value, label }) {
+function Metric({ from, value, ratio, label }) {
   return (
     <div className="metric">
       <div className="metric-value">
@@ -16,6 +16,15 @@ function Metric({ from, value, label }) {
         <span>{value}</span>
       </div>
       <div className="metric-label">{label}</div>
+      {ratio !== undefined && (
+        <div className="metric-bars" aria-hidden="true">
+          <span className="bar bar-before" />
+          <span
+            className="bar bar-after"
+            style={{ width: `max(3px, ${(ratio * 100).toFixed(2)}%)` }}
+          />
+        </div>
+      )}
     </div>
   );
 }
@@ -25,7 +34,8 @@ export default function CaseStudy({ openGallery }) {
     <section className="section wrap" id="diarchgo">
       <header className="section-head">
         <p className="eyebrow">
-          Case study · {diarchgo.company} · {diarchgo.period}
+          <span className="eyebrow-num">02</span> Case study ·{" "}
+          {diarchgo.company} · {diarchgo.period}
         </p>
         <h2>DiarchGo: owning a live quick-commerce app</h2>
         <p className="lede">{diarchgo.intro}</p>

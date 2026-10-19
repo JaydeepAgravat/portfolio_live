@@ -10,9 +10,10 @@ const img = (dir, prefix, n, ext = "png") =>
 export const profile = {
   name: "Jaydeep Agravat",
   title: "React Native Engineer",
-  headline: "React Native Engineer. Quick commerce: customer and rider apps.",
+  headline: "I build mobile apps people depend on.",
   pitch:
-    "The only mobile engineer on a live quick-commerce app with 50K+ downloads. I rebuilt and launched its customer app, maintain its rider app, and own every release on Android and iOS.",
+    "React Native engineer. I'm the only mobile engineer on a live quick-commerce app with 50K+ downloads: I rebuilt its customer app, maintain its rider app, and own every release on Android and iOS.",
+  now: "Now learning German fintech: SEPA Instant, PSD2, BaFin",
   location: "Gujarat, India",
   availability: "Open to remote or relocation",
   photo: "/images/profile.jpg",
@@ -26,12 +27,115 @@ export const profile = {
 };
 
 export const navItems = [
+  { label: "Now", id: "now" },
   { label: "DiarchGo", id: "diarchgo" },
+  { label: "Products", id: "products" },
   { label: "Experience", id: "experience" },
-  { label: "Projects", id: "projects" },
-  { label: "Skills", id: "skills" },
+  { label: "Client apps", id: "projects" },
   { label: "Contact", id: "contact" },
 ];
+
+// What I'm learning now, told through the project I'm building to learn it.
+export const now = {
+  title: "Learning German fintech by building a payment app",
+  intro:
+    "Zahln lets a student pay at a café counter phone to phone, straight from one bank account to another over SEPA Instant: no card, no terminal, no fee. I built it to learn how euros really move between banks, what German law asks of a till and a receipt, and how a payment app makes sure nobody ever pays twice.",
+  repo: "https://github.com/JaydeepAgravat/zahln",
+  handbook:
+    "https://github.com/JaydeepAgravat/zahln/blob/main/docs/HANDBOOK.md",
+  image: "/images/projects/own/zahln.jpg",
+  imageAlt:
+    "A payment in six steps: the café rings up €6.30, a one-time QR code appears, the student scans it, confirms with a PIN, sees Paid, and the café's till turns green.",
+  surfaces: [
+    "Wallet app (React Native)",
+    "Till app (React Native)",
+    "Web dashboard (Next.js)",
+    "Support console",
+    "Fastify + Postgres ledger",
+  ],
+  hardParts: [
+    {
+      title: "The lost answer",
+      body: "The bank moved the money, but the café Wi-Fi dropped before the phone heard back. The app shows Checking instead of guessing, and an idempotency key makes sure it is charged once.",
+    },
+    {
+      title: "Every cent adds up",
+      body: "A double-entry ledger, with the rules enforced inside the database, so balances always add up.",
+    },
+    {
+      title: "You can't hotfix a phone",
+      body: "Kill switches, plan features and the oldest supported app version live on the server and change within a second.",
+    },
+    {
+      title: "Germany's rules",
+      body: "Receipts that can't be edited (GoBD), a DATEV export, and GDPR deletion that keeps the 10-year payment records.",
+    },
+  ],
+  studying: [
+    {
+      group: "Payment rails",
+      items: [
+        "SEPA Instant (SCT Inst)",
+        "Instant Payments Regulation",
+        "Verification of Payee",
+        "EPC QR codes",
+      ],
+    },
+    {
+      group: "Regulation",
+      items: ["PSD2 and SCA", "BaFin licensing (ZAG, EMI)", "GDPR / DSGVO"],
+    },
+    {
+      group: "Tills and tax",
+      items: ["KassenSichV and TSE", "GoBD", "DATEV"],
+    },
+    {
+      group: "The market",
+      items: ["girocard and cash", "Wero and EPI", "N26, Trade Republic"],
+    },
+  ],
+};
+
+// Products I design, build and run myself.
+export const products = [
+  {
+    name: "Invoice Maker",
+    tagline: "Get paid for the work, not for the app.",
+    body: "An offline invoice, estimate and receipt maker for tradespeople, built after reading ~110 critical reviews of the most popular invoice apps. No account and no subscription: pay once. Clients sign on the phone, and the PDF carries a scan-to-pay QR code.",
+    image: "/images/projects/own/invoice-maker.jpg",
+    imageAlt:
+      "Invoice Maker on three phones: the documents inbox, a PDF invoice preview and an estimate signed by the client.",
+    facts: ["React Native 0.87", "Kotlin Turbo Modules", "384 tests", "5 languages"],
+    url: "https://github.com/JaydeepAgravat/invoice-maker",
+  },
+  {
+    name: "Score Reader",
+    tagline: "The next page is already there.",
+    body: "A PDF sheet-music reader for Android tablets, the platform that has no forScore. React Native owns the screens; Kotlin owns everything that has to be instant: PDF rendering, foot-pedal page turns and stylus ink.",
+    image: "/images/projects/own/score-reader.jpg",
+    imageAlt:
+      "Score Reader on a tablet showing Bach's Prelude in C with red pencil marks, next to a phone showing the score library.",
+    facts: [
+      "20 ms pedal page turn",
+      "86 ms to open a 100 MB score",
+      "14 ms search across 5,213 scores",
+    ],
+    url: "https://github.com/JaydeepAgravat/sheet-music-reader",
+  },
+];
+
+export const teardown = {
+  name: "The App Teardown Handbook",
+  body: "How to work out the design of any mobile app without opening its code: airplane mode, force-quit, a second device. I tested the method on Bluesky, Expensify and Joplin, then checked every conclusion against their source code, and published the ones it got wrong.",
+  numbers: [
+    { value: "55", label: "chapters" },
+    { value: "443", label: "probes anyone can run" },
+    { value: "53", label: "conclusions confirmed by source code" },
+    { value: "12", label: "wrong, and published too" },
+  ],
+  url: "https://jaydeepagravat.github.io/app-teardown/",
+  repo: "https://github.com/JaydeepAgravat/app-teardown",
+};
 
 export const stats = [
   { value: "50K+", label: "downloads on the app I own" },
@@ -80,23 +184,23 @@ export const diarchgo = {
       title: "Rebuilt and launched the customer app",
       metrics: [
         { value: "50+", label: "screens" },
-        { from: "1,861", value: "4", label: "inline styles" },
+        { from: "1,861", value: "4", ratio: 4 / 1861, label: "inline styles" },
       ],
       body: "Rebuilt from scratch in React Native 0.86 (New Architecture, Hermes) and strict TypeScript. Server data lives in TanStack Query, app state in 3 small Zustand stores, and a design system with light and dark themes replaced almost every inline style.",
     },
     {
       title: "Product lists that stay smooth",
       metrics: [
-        { from: "7.7 s", value: "0.3 s", label: "JS blocking time" },
-        { from: "20.8%", value: "6.1%", label: "dropped frames" },
-        { from: "86", value: "0", label: "re-renders per product card" },
+        { from: "7.7 s", value: "0.3 s", ratio: 0.3 / 7.7, label: "JS blocking time" },
+        { from: "20.8%", value: "6.1%", ratio: 6.1 / 20.8, label: "dropped frames" },
+        { from: "86", value: "0", ratio: 0, label: "re-renders per product card" },
       ],
       body: "I built a small profiling tool, found why memoization was silently failing, and fixed it. Re-renders fell from 86 per product card to none across the same eight-swipe scroll test.",
       note: "Measured on the Order Again screen on an iPhone simulator, identical eight-swipe runs.",
     },
     {
       title: "A smaller Google Maps bill",
-      metrics: [{ from: "₹80K", value: "₹25K", label: "a month, both apps" }],
+      metrics: [{ from: "₹80K", value: "₹25K", ratio: 25 / 80, label: "a month, both apps" }],
       body: "Calls were repeating needlessly: distance re-fetched on every order update, address on every screen visit. I removed the duplicates and cached results on the device.",
     },
     {

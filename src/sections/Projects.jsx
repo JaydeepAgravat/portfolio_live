@@ -30,7 +30,9 @@ export default function Projects({ openGallery }) {
   return (
     <section className="section wrap" id="projects">
       <header className="section-head">
-        <p className="eyebrow">Projects · SilverSky Technology</p>
+        <p className="eyebrow">
+          <span className="eyebrow-num">05</span> Projects · SilverSky Technology
+        </p>
         <h2>Client apps I shipped</h2>
         <p className="lede">
           22 React Native apps for clients; 15 are live, including apps with

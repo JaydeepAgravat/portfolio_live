@@ -6,10 +6,13 @@ export default function Hero() {
     <section className="hero wrap" id="top">
       <div className="hero-grid">
         <div>
-          <p className="eyebrow">
-            {profile.location} · {profile.availability}
-          </p>
-          <h1>{profile.headline}</h1>
+          <a className="status" href="#now">
+            <span className="status-dot" aria-hidden="true" />
+            {profile.now}
+          </a>
+          <h1>
+            I build mobile apps people <em>depend on.</em>
+          </h1>
           <p className="lede">{profile.pitch}</p>
           <div className="hero-actions">
             <a className="btn" href={profile.resumeUrl} download>
@@ -46,13 +49,14 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <img
-          className="portrait"
-          src={profile.photo}
-          alt={profile.name}
-          width="320"
-          height="480"
-        />
+        <figure className="portrait">
+          <img src={profile.photo} alt={profile.name} width="320" height="480" />
+          <figcaption>
+            {profile.location}
+            <br />
+            {profile.availability}
+          </figcaption>
+        </figure>
       </div>
 
       <dl className="stats">
