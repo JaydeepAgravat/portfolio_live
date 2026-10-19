@@ -6,7 +6,7 @@ export default function Now() {
       <div className="wrap">
         <header className="section-head">
           <p className="eyebrow">
-            <span className="eyebrow-num">01</span> Now · Zahln
+            <span className="eyebrow-num">01</span> Now · Zaster
           </p>
           <h2>{now.title}</h2>
           <p className="lede">{now.intro}</p>

@@ -39,11 +39,11 @@ export const navItems = [
 export const now = {
   title: "Learning German fintech by building a payment app",
   intro:
-    "Zahln lets a student pay at a café counter phone to phone, straight from one bank account to another over SEPA Instant: no card, no terminal, no fee. I built it to learn how euros really move between banks, what German law asks of a till and a receipt, and how a payment app makes sure nobody ever pays twice.",
-  repo: "https://github.com/JaydeepAgravat/zahln",
+    "Zaster lets a student pay at a café counter phone to phone, straight from one bank account to another over SEPA Instant: no card, no terminal, no fee. I built it to learn how euros really move between banks, what German law asks of a till and a receipt, and how a payment app makes sure nobody ever pays twice.",
+  repo: "https://github.com/JaydeepAgravat/zaster",
   handbook:
-    "https://github.com/JaydeepAgravat/zahln/blob/main/docs/HANDBOOK.md",
-  image: "/images/projects/own/zahln.jpg",
+    "https://github.com/JaydeepAgravat/zaster/blob/main/docs/HANDBOOK.md",
+  image: "/images/projects/own/zaster.jpg",
   imageAlt:
     "A payment in six steps: the café rings up €6.30, a one-time QR code appears, the student scans it, confirms with a PIN, sees Paid, and the café's till turns green.",
   surfaces: [
