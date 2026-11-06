@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import Now from "./sections/Now";
 import CaseStudy from "./sections/CaseStudy";
 import Products from "./sections/Products";
+import OpenSource from "./sections/OpenSource";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
@@ -25,6 +26,7 @@ export default function App() {
         <Now />
         <CaseStudy openGallery={openGallery} />
         <Products />
+        <OpenSource />
         <Experience />
         <Projects openGallery={openGallery} />
         <Skills />

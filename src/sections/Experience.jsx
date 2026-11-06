@@ -5,7 +5,7 @@ export default function Experience() {
     <section className="section wrap" id="experience">
       <header className="section-head">
         <p className="eyebrow">
-          <span className="eyebrow-num">04</span> Experience
+          <span className="eyebrow-num">05</span> Experience
         </p>
         <h2>2 years of React Native, 17 apps live</h2>
       </header>

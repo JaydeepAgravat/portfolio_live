@@ -30,6 +30,7 @@ export const navItems = [
   { label: "Now", id: "now" },
   { label: "DiarchGo", id: "diarchgo" },
   { label: "Products", id: "products" },
+  { label: "Open source", id: "open-source" },
   { label: "Experience", id: "experience" },
   { label: "Client apps", id: "projects" },
   { label: "Contact", id: "contact" },
@@ -135,6 +136,47 @@ export const teardown = {
   ],
   url: "https://jaydeepagravat.github.io/app-teardown/",
   repo: "https://github.com/JaydeepAgravat/app-teardown",
+};
+
+// Open-source work, newest first. Status is what GitHub shows today.
+export const openSource = {
+  intro:
+    "I read the issue, reproduce it, measure it, and keep the fix as small as the maintainer wants it.",
+  items: [
+    {
+      repo: "uniwind",
+      status: "Merged",
+      title: "Cached styles for classes with data-* variants",
+      body: "One data-[…] class made uniwind re-parse a component's styles on every render. I measured it, cached the result by the data props each rule reads, and simplified it twice after the maintainer's review.",
+      facts: ["12.8 → 8.6 ms per render", "400 → 0 re-parses"],
+      url: "https://github.com/uni-stack/uniwind/pull/764",
+      label: "PR #764",
+    },
+    {
+      repo: "react-native-true-sheet",
+      status: "Fixed",
+      title: "Bug report with a runnable repro",
+      body: "The ReanimatedTrueSheet Jest mock dropped the background prop. I sent a two-test repro on the published 4.0.1, and the maintainer shipped the fix the same day.",
+      url: "https://github.com/lodev09/react-native-true-sheet/issues/1004",
+      label: "Issue #1004",
+    },
+    {
+      repo: "react-native-keyboard-controller",
+      status: "In review",
+      title: "CI runs that stop cancelling each other",
+      body: "Two workflows shared one display name, so their concurrency groups collided and one cancelled the other. Keying the group on the workflow file fixes it.",
+      url: "https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748",
+      label: "PR #1748",
+    },
+    {
+      repo: "react-native-enriched-html",
+      status: "Building",
+      title: "Mentions that can't be half-edited",
+      body: "Software Mansion accepted my proposal: a prop that removes the whole mention when an edit or autocorrect lands inside it, on iOS, Android and web.",
+      url: "https://github.com/software-mansion/react-native-enriched-html/issues/855",
+      label: "Issue #855",
+    },
+  ],
 };
 
 export const stats = [

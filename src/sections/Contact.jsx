@@ -6,7 +6,7 @@ export default function Contact() {
     <footer className="contact" id="contact">
       <div className="wrap">
         <p className="eyebrow">
-          <span className="eyebrow-num">07</span> Contact
+          <span className="eyebrow-num">08</span> Contact
         </p>
         <h2>Hiring for React Native, or building payments in Europe? Let's talk.</h2>
         <a className="contact-email" href={`mailto:${profile.email}`}>

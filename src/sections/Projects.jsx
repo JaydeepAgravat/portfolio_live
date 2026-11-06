@@ -31,7 +31,7 @@ export default function Projects({ openGallery }) {
     <section className="section wrap" id="projects">
       <header className="section-head">
         <p className="eyebrow">
-          <span className="eyebrow-num">05</span> Projects · SilverSky Technology
+          <span className="eyebrow-num">06</span> Projects · SilverSky Technology
         </p>
         <h2>Client apps I shipped</h2>
         <p className="lede">

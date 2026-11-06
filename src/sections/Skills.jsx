@@ -5,7 +5,7 @@ export default function Skills() {
     <section className="section wrap" id="skills">
       <header className="section-head">
         <p className="eyebrow">
-          <span className="eyebrow-num">06</span> Skills
+          <span className="eyebrow-num">07</span> Skills
         </p>
         <h2>What I work with</h2>
       </header>

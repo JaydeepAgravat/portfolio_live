@@ -1461,3 +1461,68 @@ button.cover:hover img {
     animation: none !important;
   }
 }
+
+/* ── Open source ────────────────────────────────────────── */
+.oss {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.oss > li {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.oss-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.oss-status {
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.oss-merged,
+.oss-fixed {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.oss h3 {
+  margin: 14px 0 8px;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.oss > li > p:not(.oss-meta) {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.oss .facts {
+  margin-top: 14px;
+}
+
+.oss .text-link {
+  margin-top: auto;
+  padding-top: 18px;
+}
