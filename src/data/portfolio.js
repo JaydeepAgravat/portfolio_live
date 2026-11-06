@@ -139,40 +139,61 @@ export const teardown = {
 };
 
 // Open-source work, newest first. Status is what GitHub shows today.
+// Logos are each project's own, from its repo.
 export const openSource = {
   intro:
     "I read the issue, reproduce it, measure it, and keep the fix as small as the maintainer wants it.",
   items: [
     {
       repo: "uniwind",
+      owner: "uni-stack",
+      logo: "/images/oss/uniwind.png",
+      logoFull: true,
+      brand: "#2f7cf6",
       status: "Merged",
+      emoji: "✅",
       title: "Cached styles for classes with data-* variants",
       body: "One data-[…] class made uniwind re-parse a component's styles on every render. I measured it, cached the result by the data props each rule reads, and simplified it twice after the maintainer's review.",
-      facts: ["12.8 → 8.6 ms per render", "400 → 0 re-parses"],
+      facts: ["⚡ 12.8 → 8.6 ms per render", "🔁 400 → 0 re-parses"],
       url: "https://github.com/uni-stack/uniwind/pull/764",
       label: "PR #764",
     },
     {
       repo: "react-native-true-sheet",
+      owner: "lodev09",
+      logo: "/images/oss/true-sheet.svg",
+      brand: "#1f64ae",
       status: "Fixed",
+      emoji: "🐛",
       title: "Bug report with a runnable repro",
       body: "The ReanimatedTrueSheet Jest mock dropped the background prop. I sent a two-test repro on the published 4.0.1, and the maintainer shipped the fix the same day.",
+      facts: ["🧪 2-test repro", "⏱️ fixed same day"],
       url: "https://github.com/lodev09/react-native-true-sheet/issues/1004",
       label: "Issue #1004",
     },
     {
       repo: "react-native-keyboard-controller",
+      owner: "kirillzyusko",
+      logo: "/images/oss/keyboard-controller.svg",
+      brand: "#4cdbc4",
       status: "In review",
+      emoji: "👀",
       title: "CI runs that stop cancelling each other",
       body: "Two workflows shared one display name, so their concurrency groups collided and one cancelled the other. Keying the group on the workflow file fixes it.",
+      facts: ["⚙️ GitHub Actions"],
       url: "https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748",
       label: "PR #1748",
     },
     {
       repo: "react-native-enriched-html",
+      owner: "software-mansion",
+      logo: "/images/oss/enriched-html.svg",
+      brand: "#faa089",
       status: "Building",
+      emoji: "🛠️",
       title: "Mentions that can't be half-edited",
       body: "Software Mansion accepted my proposal: a prop that removes the whole mention when an edit or autocorrect lands inside it, on iOS, Android and web.",
+      facts: ["📱 iOS · Android · Web"],
       url: "https://github.com/software-mansion/react-native-enriched-html/issues/855",
       label: "Issue #855",
     },
