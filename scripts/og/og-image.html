@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- Source of public/og-image.png (1200x627). Render from this folder with:
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
+  --force-device-scale-factor=1 --window-size=1200,627 --virtual-time-budget=8000 \
+  --allow-file-access-from-files --screenshot=../../public/og-image.png "file://$PWD/og-image.html" -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Geist:wght@400..600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 627px; }
+  body {
+    position: relative;
+    overflow: hidden;
+    background: #f4f3ef;
+    color: #0e0e0d;
+    font-family: "Geist", system-ui, sans-serif;
+    padding: 56px 72px 0;
+  }
+  .top { display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 14px; font-weight: 600; font-size: 22px; }
+  .mark {
+    display: grid; place-items: center; width: 44px; height: 44px; border-radius: 11px;
+    background: #2f4bff; color: #fff; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 18px;
+  }
+  .url { font-family: "Geist Mono"; font-size: 18px; color: #5e5d57; }
+  .eyebrow {
+    margin-top: 50px; font-family: "Geist Mono"; font-size: 17px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #5e5d57;
+  }
+  h1 {
+    margin-top: 12px; font-family: "Bricolage Grotesque"; font-weight: 800; font-size: 94px;
+    line-height: 0.98; letter-spacing: -0.045em;
+  }
+  h1 em { font-style: normal; color: #2f4bff; }
+  .stats { display: flex; gap: 48px; margin-top: 34px; }
+  .stats div { display: flex; align-items: baseline; gap: 10px; }
+  .stats b { font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 34px; letter-spacing: -0.03em; }
+  .stats span { font-size: 18px; color: #5e5d57; }
+  .oss {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 128px;
+    display: flex; align-items: center; gap: 26px; padding: 0 72px;
+    background: #0e0e0d; color: #f4f3ef;
+  }
+  .oss-label { font-family: "Geist Mono"; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #a3a29a; line-height: 1.5; }
+  .oss-label strong { display: block; color: #9aa8ff; font-weight: 500; }
+  .logos { display: flex; gap: 18px; margin-left: auto; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .tile {
+    display: grid; place-items: center; width: 52px; height: 52px; border-radius: 13px;
+    background: #fff; padding: 8px; overflow: hidden;
+  }
+  .tile.full { padding: 0; }
+  .tile img { width: 100%; height: 100%; object-fit: contain; }
+  .logo p { font-family: "Geist Mono"; font-size: 14px; line-height: 1.35; color: #f4f3ef; }
+  .logo p small { display: block; font-size: 13px; }
+  .merged small { color: #3ccf7f; }
+  .fixed small { color: #4cc3f5; }
+  .review small { color: #f5b942; }
+  .building small { color: #9aa8ff; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand"><span class="mark">JA</span>Jaydeep Agravat</div>
+    <div class="url">jaydeep-agravat-portfolio.vercel.app</div>
+  </div>
+  <p class="eyebrow">React Native Engineer · Open to remote or relocation</p>
+  <h1>I build mobile apps<br />people <em>depend on.</em></h1>
+  <div class="stats">
+    <div><b>17</b><span>apps live</span></div>
+    <div><b>50K+</b><span>downloads</span></div>
+    <div><b>99.87%</b><span>crash-free users</span></div>
+  </div>
+  <div class="oss">
+    <p class="oss-label">Open source<strong>React Native libraries</strong></p>
+    <div class="logos">
+      <div class="logo merged"><span class="tile full"><img src="../../public/images/oss/uniwind.png" /></span><p>uniwind<small>✓ merged</small></p></div>
+      <div class="logo fixed"><span class="tile"><img src="../../public/images/oss/true-sheet.svg" /></span><p>true-sheet<small>✓ fixed</small></p></div>
+      <div class="logo review"><span class="tile"><img src="../../public/images/oss/keyboard-controller.svg" /></span><p>keyboard-ctrl<small>● in review</small></p></div>
+      <div class="logo building"><span class="tile"><img src="../../public/images/oss/enriched-html.svg" /></span><p>enriched-html<small>● building</small></p></div>
+    </div>
+  </div>
+</body>
+</html>
