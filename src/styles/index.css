@@ -1467,10 +1467,12 @@ button.cover:hover img {
 .oss-tone-fixed { --tone: #0b8fc9; }
 .oss-tone-in-review { --tone: #d48806; }
 .oss-tone-building { --tone: var(--accent); }
+.oss-tone-draft { --tone: #7c6fd6; }
 
 :root[data-theme="dark"] .oss-tone-merged { --tone: #3ccf7f; }
 :root[data-theme="dark"] .oss-tone-fixed { --tone: #4cc3f5; }
 :root[data-theme="dark"] .oss-tone-in-review { --tone: #f5b942; }
+:root[data-theme="dark"] .oss-tone-draft { --tone: #a99ff0; }
 
 .oss-summary {
   display: flex;
